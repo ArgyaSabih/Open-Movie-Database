@@ -1,0 +1,1 @@
+The Open Movie Database (OMDB) is a comprehensive and open database of movie information, including details on movies, TV series, and more. This repository serves as an access point to the OMDB API, allowing developers to retrieve movie data for various purposes.
