@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>AS Movie Database</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col">
+          <h1>AS Movie Database</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control input-keyword" placeholder="Search movie..." />
+            <button class="btn btn-primary search-button" type="button">Search</button>
+          </div>
+        </div>
+      </div>
+      <div class="row movie-container"></div>
+    </div>
+
+    <!-- Awal Modal -->
+    <div
+      class="modal fade"
+      id="movieDetailModal"
+      tabindex="-1"
+      aria-labelledby="movieDetailModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-center modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="movieDetailModalLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-3">
+                  <img src="" class="img-fluid" />
+                </div>
+                <div class="col-md">
+                  <ul class="list-group">
+                    <li class="list-group-item"><h4>Movie (0000)</h4></li>
+                    <li class="list-group-item"><strong>Director : </strong> -</li>
+                    <li class="list-group-item"><strong>Actors : </strong> -</li>
+                    <li class="list-group-item"><strong>Writer : </strong> -</li>
+                    <li class="list-group-item">
+                      <strong>Plot :</strong><br />
+                      -
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Modal -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

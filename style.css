@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;1,400&display=swap");
+
+body {
+  font-family: "EB Garamond", serif;
+  background-color: #0f0f0f;
+}
+
+.input-group
+  > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(
+    .invalid-feedback
+  ) {
+  margin-right: calc(var(--bs-border-width) * -1);
+  border-radius: 5px;
+}
+
+.col h1 {
+  color: azure;
+}
